@@ -3,7 +3,7 @@ import {Link} from 'react-router';
 import './../App.css';
 const logo = require('./../logo.svg');
 
-export class Header extends React.Component < {}, {} > {
+class Header extends React.Component < {}, {} > {
   render() {
     return (
       <div className="container">
@@ -14,10 +14,19 @@ export class Header extends React.Component < {}, {} > {
           <ul className="nav navbar-nav">
             <li>
               <Link to="home">Home</Link>
-            </li>
+            </li>                 
             <li>
               <Link to="accounts">Accounts</Link>
             </li>
+            <li>
+              <Link to="groups">Groups</Link>
+            </li>                   
+            <li>
+              <Link to="movements">Movements</Link>
+            </li>       
+            <li>
+              <Link to="config">Config</Link>
+            </li>                        
           </ul>
         </div>
         <div className="jumbotron">
@@ -27,3 +36,4 @@ export class Header extends React.Component < {}, {} > {
     );
   }
 }
+export default Header;
