@@ -1,4 +1,4 @@
-
+/// <reference path="./spento.d.ts"/>;
 import * as ReactDOM from 'react-dom';
 import routes from './common/routes';
 
