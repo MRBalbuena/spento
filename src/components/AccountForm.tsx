@@ -16,8 +16,8 @@ class AccountForm extends React.Component < AccountFormProps, {} > {
           <br/>
           <Input name="description" label="Description" placeholder="set description" value={this.props.account.description} onChange={this.props.onChange}/>
           <br/>          
-          <input type="radio" name="income" value="Expenses" checked={this.props.account.expenses} />
-          <input type="radio" name="income" value="Income" checked={!this.props.account.expenses} />
+          <input type="checkbox" name="expenses" checked={this.props.account.expenses} /><span>Expenses (if not is Income)</span>
+          
         </form>
       </div>
     );

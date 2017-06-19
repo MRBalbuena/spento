@@ -1,8 +1,5 @@
-/// <reference path="../spento.d.ts"/>;
-
-import AccountForm from './AccountForm';
-
 import * as React from 'react';
+import AccountForm from './AccountForm';
 
 export interface AccountManagerProps {}
 
